@@ -1,0 +1,99 @@
+research.project.manager
+hadafeavval
+
+yahoo g25
+Inthenamegod1389
+
+
+
+
+Dear Ms. Hanie Sedghi:
+
+We regret to inform you that your paper  #1569227655 ('A Cost-Efficient Multipath Routing Protocol Robust against Selfishness in Ad hoc Networks') cannot be accepted for publication in the Proceedings of  The 20th IEEE International Symposium On Personal, Indoor and Mobile Radio Communications.
+
+The reviews are below or can be found at http://edas.info/showPaper.php?m=1569227655, using your EDAS login name honey.sedghi@gmail.com.
+
+======= TPC Review 1 =======
+
+> *** Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+Acceptable (3)
+
+> *** Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the
+analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+Valid work but limited contribution (3)
+
+> *** Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+Significant original work and novel results. (4)
+
+> *** Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+Readable, but revision is needed in some parts. (3)
+
+> *** Strong Aspects: Comments to the author: what are the strong aspects of the paper?
+
+This paper proposes multipath routing algorithm against selfish nodes in ad-hoc network. And computer simulation confirms that the proposed algorithm can reduce the data loss.
+
+> *** Weak Aspects: Comments to the author: what are the weak aspects of the paper?
+
+The reson why the node becomes selfish is not clear. Does the benign node change to the selfish node?
+
+> *** Recommended Changes: Recommended changes. Please indicate any changes that should be made to the paper if accepted.
+
+Please explain the reson why the node becomes selfish.
+
+======= TPC Review 2 =======
+
+> *** Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+Little (2)
+
+> *** Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the
+analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+Marginal work and simple contribution.  Some Flaws (2)
+
+> *** Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+Minor variations on a well investigated subject. (2)
+
+> *** Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+Readable, but revision is needed in some parts. (3)
+
+> *** Strong Aspects: Comments to the author: what are the strong aspects of the paper?
+
+Secure routing researches are vital.  Selfish behavior
+can have drastic impacts on network behavior. We have
+proposed a Selfish-Tolerant Multipath Routing (STMR) protocol
+which detects and punishes all types of selfish behavior known so
+far. STMR utilizes a proactive approach to enforce cooperation.
+In addition, it uses a novel data redirection method to mitigate
+selfish behavior impact on network performance. STMR
+promises establishing a safe route if network graph remains
+connected after eliminating selfish nodes. Simulation results show
+that STMR performance outperforms AOMDV and it reduces
+data loss considerably. A low overhead leads to a great reduction
+in benign nodes' power consumption. STMR is robust against
+selfish behavior and it is resilient to complex attacks as well.
+
+> *** Weak Aspects: Comments to the author: what are the weak aspects of the paper?
+
+Just a simulation of various nodes Secure routing researches are vital.  Selfish behavior
+can have drastic impacts on network behavior. We have
+proposed a Selfish-Tolerant Multipath Routing (STMR) protocol
+which detects and punishes all types of selfish behavior known so
+far. STMR utilizes a proactive approach to enforce cooperation.
+In addition, it uses a novel data redirection method to mitigate
+selfish behavior impact on network performance. STMR
+promises establishing a safe route if network graph remains
+connected after eliminating selfish nodes. Simulation results show
+that STMR performance outperforms AOMDV and it reduces
+data loss considerably. A low overhead leads to a great reduction
+in benign nodes' power consumption. STMR is robust against
+selfish behavior and it is resilient to complex attacks as well.
+
+> *** Recommended Changes: Recommended changes. Please indicate any changes that should be made to the paper if accepted.
+
+The text and scenerio should be revised.
+
+
+
+Regards,
+Hiroshi Harada, Ph.D.
+Shuzo Kato, Ph.D.
+PIMRC'09 Technical Program Committee Chairs

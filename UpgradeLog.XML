@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MANET">
+</Property><Property Name="Solution File" Value="G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\MANET.sln">
+</Property><Property Name="User Options File" Value="G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\MANET.suo">
+</Property><Property Name="Date" Value="Thursday, April 14, 2011">
+</Property><Property Name="Time" Value="20:57 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MANET.sln" Description="File successfully backed up as G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\MANET.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="MANET.suo" Description="File successfully backed up as G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\MANET.suo.old">
+</Event><Event ErrorLevel="0" Project="MANET" Source="MANET.vcproj" Description="Converting project file 'G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\MANET.vcproj'.">
+</Event><Event ErrorLevel="1" Project="MANET" Source="MANET.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="MANET" Source="MANET.vcproj" Description="MSB8012: $(TargetPath) ('G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\.\Release\MANET.exe') does not match the Linker's OutputFile property value '.\Release/MANET.exe' ('G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\Release/MANET.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="MANET" Source="MANET.vcproj" Description="MSB8012: $(TargetPath) ('G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\.\Debug\MANET.exe') does not match the Linker's OutputFile property value '.\Debug/MANET.exe' ('G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\Debug/MANET.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="MANET" Source="MANET.vcproj" Description="Done converting to new project file 'G:\Documents\Projects\My Msc Project\AODV_GTAMR_edited\MANET.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="MANET" Source="MANET.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MANET.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MANET.sln" Description="Converted">
+</Event></UpgradeLog>

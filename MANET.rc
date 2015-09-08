@@ -1,0 +1,954 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MANET.rc""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MANET.ico"
+IDR_MANETTYPE           ICON                    "res\\MANETDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_Selfish1            BITMAP                  "res\\selfish1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Network"
+    BEGIN
+        POPUP "&Router"
+        BEGIN
+            POPUP "&Self-Generate"
+            BEGIN
+                MENUITEM "1",                           ID_NETWORK_ROUTER_SELFGENERATE_1
+                MENUITEM "2",                           ID_NETWORK_ROUTER_SELFGENERATE_2
+                MENUITEM "5",                           ID_NETWORK_ROUTER_SELFGENERATE_5
+                MENUITEM "10",                          ID_NETWORK_ROUTER_SELFGENERATE_10
+                MENUITEM "20",                          ID_NETWORK_ROUTER_SELFGENERATE_20
+                MENUITEM "50",                          ID_NETWORK_ROUTER_SELFGENERATE_50
+                MENUITEM "100",                         ID_NETWORK_ROUTER_SELFGENERATE_100
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Add",                         ID_NETWORK_ROUTER_ADD
+            MENUITEM "Edit",                        ID_NETWORK_ROUTER_EDIT
+            MENUITEM "Delete",                      ID_NETWORK_ROUTER_DELETE
+            MENUITEM SEPARATOR
+            MENUITEM "Force Selfishness",           ID_ROUTER_FORCESELFISHNESS
+            MENUITEM "Default &Preferences",        ID_NETWORK_ROUTER_PREFERENCES
+            POPUP "Grid"
+            BEGIN
+                MENUITEM "64",                          ID_GRID_64
+                MENUITEM "100",                         ID_GRID_100
+                MENUITEM "144",                         ID_GRID_144
+            END
+        END
+        POPUP "&Link"
+        BEGIN
+            MENUITEM "Self-Generate",               ID_NETWORK_LINK_SELFGENERATE
+            MENUITEM SEPARATOR
+            MENUITEM "Add",                         ID_NETWORK_LINK_ADD
+            MENUITEM "Edit",                        ID_NETWORK_LINK_EDIT
+            MENUITEM "Delete",                      ID_NETWORK_LINK_DELETE
+            MENUITEM SEPARATOR
+            MENUITEM "Router-Click",                ID_NETWORK_LINK_ROUTERSCLICK
+            MENUITEM SEPARATOR
+            MENUITEM "Update RB Links",             ID_NETWORK_LINK_UPDATEREDLINKS
+            MENUITEM "Create Blue Links",           ID_NETWORK_LINK_CREATEBLUELINKS
+            MENUITEM "Remove Red Links",            ID_NETWORK_LINK_REMOVEREDLINKS
+            MENUITEM SEPARATOR
+            MENUITEM "Default &Preferences",        ID_NETWORK_LINK_DEFAULTPREFERENCES
+        END
+        POPUP "&Traffic"
+        BEGIN
+            POPUP "Self-Generate"
+            BEGIN
+                MENUITEM "Any Type",                    ID_SELF_ANYTYPE
+                MENUITEM "Ad-hoc",                      ID_SELF_AD
+                MENUITEM "Selfish I",                   ID_SELF_SELFISHI
+                MENUITEM "Selfish II",                  ID_SELF_SELFISHII
+                MENUITEM "All Connections",             ID_SELF_ALLCONNECTIONS
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Add",                         ID_NETWORK_TRAFFIC_ADD
+            MENUITEM "Edit",                        ID_NETWORK_TRAFFIC_EDIT
+            MENUITEM "Delete",                      ID_NETWORK_TRAFFIC_DELETE
+            MENUITEM SEPARATOR
+            MENUITEM "Default &Preferences",        ID_NETWORK_TRAFFIC_DEFAULTPREFERENCES
+        END
+        POPUP "&Game"
+        BEGIN
+            MENUITEM "Default Preferences",         ID_GAME_DEFAULTPREFERENCES
+        END
+        POPUP "Protocol"
+        BEGIN
+            MENUITEM "Default Preferences",         ID_PROTOCOL_DEFAULTPREFERENCES
+        END
+    END
+    POPUP "&Simulation"
+    BEGIN
+        MENUITEM "&Profile",                    ID_SIMULATE_RUN
+        MENUITEM "Statistics",                  ID_SIMULATION_STATISTICS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About MANET...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_ROUTER MENU 
+BEGIN
+    POPUP "Router"
+    BEGIN
+        MENUITEM "Add",                         ID_ROUTER_ADD
+        MENUITEM "Edit",                        ID_ROUTER_EDIT
+        MENUITEM "Delete",                      ID_ROUTER_DELETE
+    END
+END
+
+IDR_MENU_LINK MENU 
+BEGIN
+    POPUP "Link"
+    BEGIN
+        MENUITEM "link from here",              ID_LINK_LINKFROMHERE
+        MENUITEM "link to here",                ID_LINK_LINKTOHERE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MANET"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,10,20,20
+    LTEXT           "GTNS Version 1.0",IDC_STATIC,40,16,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,32,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "By diman.zt@gmail.com",IDC_STATIC,40,48,134,8
+END
+
+IDD_DIALOG_ROUTER DIALOGEX 0, 0, 277, 292
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Router"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Router Caption",IDC_STATIC,15,21,48,8
+    EDITTEXT        IDC_EDIT_CAPTION,75,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "Coverage (pixel)",IDC_STATIC,15,46,52,8
+    EDITTEXT        IDC_EDIT_COVERAGE,75,43,40,14,ES_AUTOHSCROLL
+    LTEXT           "Delay (tick)",IDC_STATIC,15,121,35,8
+    EDITTEXT        IDC_EDIT_DELAY,75,118,40,14,ES_AUTOHSCROLL
+    LTEXT           "Buffer (packet)",IDC_STATIC,15,146,48,8
+    EDITTEXT        IDC_EDIT_BUFFER,75,143,40,14,ES_AUTOHSCROLL
+    LTEXT           "Router Image",IDC_STATIC,150,21,44,8
+    EDITTEXT        IDC_EDIT_IMAGE,203,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "X-axis",IDC_STATIC,150,46,20,8
+    EDITTEXT        IDC_EDIT_X,203,43,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y-axis",IDC_STATIC,150,70,20,8
+    EDITTEXT        IDC_EDIT_Y,203,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Length (pixel)",IDC_STATIC,150,96,43,8
+    EDITTEXT        IDC_EDIT_LENGTH,203,93,40,14,ES_AUTOHSCROLL
+    LTEXT           "Width (pixel)",IDC_STATIC,150,121,40,8
+    EDITTEXT        IDC_EDIT_WIDTH,203,118,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,271,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,220,271,50,14
+    GROUPBOX        "TYPE",IDC_STATIC,15,175,255,34
+    CONTROL         "Adhoc",IDC_RADIO_Adhoc,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,185,37,10
+    CONTROL         "Selfish I",IDC_RADIO_Malicious,"Button",BS_AUTORADIOBUTTON,100,185,41,10
+    CONTROL         "Selfish II",IDC_RADIO_Selfish2,"Button",BS_AUTORADIOBUTTON,150,185,43,10
+    CONTROL         "Selfish III",IDC_RADIO_Selfish3,"Button",BS_AUTORADIOBUTTON,210,185,45,10
+    LTEXT           "Power",IDC_STATIC,15,71,21,8
+    EDITTEXT        IDC_EDIT_Power,75,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Forwarded Data",IDC_STATIC,15,97,60,8
+    EDITTEXT        IDC_EDIT_ForwData,75,94,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Game Strategy",IDC_STATIC,15,225,247,25
+    CONTROL         "TFT",IDC_RADIO_TFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,48,234,29,10
+    CONTROL         "ERTFT",IDC_RADIO_ERTFT,"Button",BS_AUTORADIOBUTTON,130,234,39,10
+    CONTROL         "F.R.",IDC_RADIO_FR,"Button",BS_AUTORADIOBUTTON,208,234,29,10
+END
+
+IDD_DIALOG_CAPTION DIALOG  0, 0, 132, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Caption"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter Caption",IDC_STATIC,7,21,44,8
+    EDITTEXT        IDC_EDIT_CAPTION,75,18,50,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,49,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,49,50,14
+END
+
+IDD_DIALOG_LINK DIALOG  0, 0, 135, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Link"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Router 1",IDC_STATIC,7,21,28,8
+    EDITTEXT        IDC_EDIT_IN,75,18,50,14,ES_AUTOHSCROLL
+    LTEXT           "Router 2",IDC_STATIC,7,46,28,8
+    EDITTEXT        IDC_EDIT_OUT,75,43,50,14,ES_AUTOHSCROLL
+    LTEXT           "frequency (pixel/tick)",IDC_STATIC,7,71,68,8
+    EDITTEXT        IDC_EDIT_FREQUENCY,75,68,50,14,ES_AUTOHSCROLL
+    GROUPBOX        "Duplicity",IDC_STATIC,7,100,118,50
+    CONTROL         "Full Duplex",IDC_RADIO_FULL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,120,51,10
+    CONTROL         "Half Duplex",IDC_RADIO_HALF,"Button",BS_AUTORADIOBUTTON,66,120,53,10
+    DEFPUSHBUTTON   "OK",IDOK,7,161,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,161,50,14
+END
+
+IDD_DIALOG_TRAFFIC DIALOGEX 0, 0, 148, 231
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Traffic"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Source Router",IDC_STATIC,7,21,47,8
+    EDITTEXT        IDC_EDIT_SOURCE,75,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "Destination Router",IDC_STATIC,7,46,60,8
+    EDITTEXT        IDC_EDIT_DESTINATION,75,43,40,14,ES_AUTOHSCROLL
+    LTEXT           "Start (tick)",IDC_STATIC,7,71,33,8
+    EDITTEXT        IDC_EDIT_START,75,68,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Routing Protocol",IDC_STATIC,7,100,68,100
+    CONTROL         "GTAMR",IDC_RADIO_GTAMR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,119,38,10
+    CONTROL         "AODV",IDC_RADIO_AODV,"Button",BS_AUTORADIOBUTTON,25,145,36,10
+    CONTROL         "AOMDV",IDC_RADIO_AOMDV,"Button",BS_AUTORADIOBUTTON,25,169,42,10
+    DEFPUSHBUTTON   "OK",IDOK,7,210,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,91,210,50,14
+END
+
+IDD_DIALOG_SIMULATION DIALOGEX 0, 0, 300, 257
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simulation"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Speed Control",IDC_STATIC,7,7,286,58
+    LTEXT           "Master Speed",IDC_STATIC,25,20,50,10
+    CONTROL         "Slider1",IDC_SLIDER_MasterSpeed,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,75,20,200,10
+    LTEXT           "Slave Speed",IDC_STATIC,25,46,50,8
+    CONTROL         "Slider2",IDC_SLIDER_SlaveSpeed1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,75,45,100,10
+    CONTROL         "Slider3",IDC_SLIDER_SlaveSpeed2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,175,45,100,10
+    GROUPBOX        "Event Viewer",IDC_STATIC,7,75,286,124
+    LISTBOX         IDC_LIST_EVENTS,25,91,250,94,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,7,236,50,14
+    PUSHBUTTON      "Resume",IDC_BUTTON_ResumeStop,125,236,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,243,236,50,14
+    LTEXT           "CLOCK",IDC_STATIC,7,211,24,8
+    EDITTEXT        IDC_EDIT_Clock,35,208,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_End2End DIALOG  0, 0, 132, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "End 2 End Nodes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Router1",IDC_STATIC,7,21,26,8
+    EDITTEXT        IDC_EDIT_ROUTER1,50,18,75,14,ES_AUTOHSCROLL
+    LTEXT           "Router2",IDC_STATIC,7,46,26,8
+    EDITTEXT        IDC_EDIT_ROUTER2,50,43,75,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,69,50,14
+END
+
+IDD_DIALOG_GAME DIALOGEX 0, 0, 215, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Game"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,163,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,163,50,14
+    GROUPBOX        "Strategy",IDC_STATIC,30,30,150,120
+    CONTROL         "TFT",IDC_RADIO_TFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,60,55,37,10
+    CONTROL         "ERTFT",IDC_RADIO_ERTFT,"Button",BS_AUTORADIOBUTTON,60,85,37,10
+    CONTROL         "Forwarding Ratio",IDC_RADIO_FR,"Button",BS_AUTORADIOBUTTON,60,115,73,10
+END
+
+IDD_DIALOG_Protocol DIALOGEX 0, 0, 118, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,124,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,124,50,14
+    GROUPBOX        "Routing Protocol",IDC_STATIC,19,14,68,71
+    CONTROL         "GTAMR",IDC_RADIO_GTAMR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,30,25,39,10
+    CONTROL         "AODV",IDC_RADIO_AODV,"Button",BS_AUTORADIOBUTTON,30,45,35,10
+    CONTROL         "AOMDV",IDC_RADIO_AOMDV,"Button",BS_AUTORADIOBUTTON,30,65,40,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "GTNS Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "GTNS"
+            VALUE "LegalCopyright", "Copyright (C) 2007"
+            VALUE "OriginalFilename", "GTNS.EXE"
+            VALUE "ProductName", "GTNS Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        VERTGUIDE, 40
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+        HORZGUIDE, 20
+        HORZGUIDE, 36
+        HORZGUIDE, 52
+    END
+
+    IDD_DIALOG_ROUTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        VERTGUIDE, 15
+        VERTGUIDE, 50
+        VERTGUIDE, 75
+        VERTGUIDE, 100
+        VERTGUIDE, 150
+        VERTGUIDE, 210
+        VERTGUIDE, 262
+        VERTGUIDE, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+        HORZGUIDE, 75
+        HORZGUIDE, 100
+        HORZGUIDE, 125
+        HORZGUIDE, 150
+        HORZGUIDE, 175
+        HORZGUIDE, 190
+        HORZGUIDE, 200
+        HORZGUIDE, 225
+        HORZGUIDE, 240
+        HORZGUIDE, 250
+    END
+
+    IDD_DIALOG_CAPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        VERTGUIDE, 75
+        VERTGUIDE, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+        HORZGUIDE, 25
+    END
+
+    IDD_DIALOG_LINK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        VERTGUIDE, 50
+        VERTGUIDE, 75
+        VERTGUIDE, 100
+        VERTGUIDE, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+        HORZGUIDE, 75
+        HORZGUIDE, 100
+        HORZGUIDE, 125
+        HORZGUIDE, 150
+    END
+
+    IDD_DIALOG_TRAFFIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        VERTGUIDE, 25
+        VERTGUIDE, 75
+        VERTGUIDE, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+        HORZGUIDE, 75
+        HORZGUIDE, 100
+        HORZGUIDE, 125
+        HORZGUIDE, 150
+        HORZGUIDE, 175
+    END
+
+    IDD_DIALOG_SIMULATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 25
+        VERTGUIDE, 75
+        VERTGUIDE, 100
+        VERTGUIDE, 150
+        VERTGUIDE, 175
+        VERTGUIDE, 200
+        VERTGUIDE, 275
+        VERTGUIDE, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+        HORZGUIDE, 20
+        HORZGUIDE, 25
+        HORZGUIDE, 30
+        HORZGUIDE, 45
+        HORZGUIDE, 50
+        HORZGUIDE, 55
+        HORZGUIDE, 65
+        HORZGUIDE, 75
+        HORZGUIDE, 100
+        HORZGUIDE, 215
+    END
+
+    IDD_DIALOG_End2End, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        VERTGUIDE, 50
+        VERTGUIDE, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+    END
+
+    IDD_DIALOG_GAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        VERTGUIDE, 30
+        VERTGUIDE, 60
+        VERTGUIDE, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+        HORZGUIDE, 30
+        HORZGUIDE, 60
+        HORZGUIDE, 90
+        HORZGUIDE, 120
+        HORZGUIDE, 150
+    END
+
+    IDD_DIALOG_Protocol, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        VERTGUIDE, 30
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+        HORZGUIDE, 30
+        HORZGUIDE, 50
+        HORZGUIDE, 70
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "GTNS\n\nMANET\n\n\nMANET.Document\nMANET Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "GTNS"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Farsi resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FAR)
+#ifdef _WIN32
+LANGUAGE LANG_FARSI, SUBLANG_DEFAULT
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_RandomTraffic DIALOGEX 0, 0, 144, 214
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Random Traffic Generate"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_Connection,75,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START,75,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Stop,75,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DataRate,75,65,40,14,ES_AUTOHSCROLL
+    CONTROL         "GTAMR",IDC_RADIO_GTAMR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,100,38,10
+    CONTROL         "AODV",IDC_RADIO_AOMDV,"Button",BS_AUTORADIOBUTTON,25,120,36,10
+    CONTROL         "AOMDV",IDC_RADIO_DSR,"Button",BS_AUTORADIOBUTTON,25,140,42,10
+    DEFPUSHBUTTON   "OK",IDOK,7,193,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,193,50,14
+    LTEXT           "No. of Connections",IDC_STATIC,7,7,62,8
+    LTEXT           "Start Tick",IDC_STATIC,7,25,32,8
+    LTEXT           "Data Rate",IDC_STATIC,7,65,34,8
+    GROUPBOX        "Routing Protocol",IDC_STATIC,7,85,68,80
+    LTEXT           "Stop Tick",IDC_STATIC,7,45,32,8
+END
+
+IDD_DIALOG_Stat DIALOGEX 0, 0, 276, 258
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Statistics"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,237,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,219,237,50,14
+    LTEXT           "RReq Trans. No.",IDC_STATIC,7,46,55,8
+    EDITTEXT        IDC_EDIT_RReqTransNumber,80,43,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RRepTransNumber,80,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "RRep Trans. No.",IDC_STATIC,7,71,55,8
+    LTEXT           "Gen. Data No. CN",IDC_STATIC,7,96,59,8
+    EDITTEXT        IDC_EDIT_GenDataTransNumber,80,93,40,14,ES_AUTOHSCROLL
+    LTEXT           "Gen. Ack No. CN",IDC_STATIC,7,121,56,8
+    EDITTEXT        IDC_EDIT_GenAckTransNumber,80,118,40,14,ES_AUTOHSCROLL
+    LTEXT           "Data Trans. No.",IDC_STATIC,7,21,52,8
+    EDITTEXT        IDC_EDIT_DataTransNumber,80,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "CLOCK",IDC_STATIC,7,220,37,10
+    EDITTEXT        IDC_EDIT_Clock,80,218,40,14,ES_AUTOHSCROLL
+    LTEXT           "No.Selfish1",IDC_STATIC,150,95,37,8
+    LTEXT           "No.Selfish2",IDC_STATIC,150,120,37,10
+    EDITTEXT        IDC_EDIT_Selfish2Num,210,118,40,14,ES_AUTOHSCROLL
+    LTEXT           "No.Ad.Hoc",IDC_STATIC,150,70,36,8
+    EDITTEXT        IDC_EDIT_Selfish1Num,210,92,40,14,ES_AUTOHSCROLL
+    LTEXT           "Total Power",IDC_STATIC,150,45,39,8
+    EDITTEXT        IDC_EDIT_AdhocNum,210,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "Estab. Conn.",IDC_STATIC,150,21,42,8
+    EDITTEXT        IDC_EDIT_TotalPower,210,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EstabConn,210,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "Min Data Delay",IDC_STATIC,7,145,62,10
+    EDITTEXT        IDC_EDIT_MinDataDelay,80,143,40,14,ES_AUTOHSCROLL
+    LTEXT           "Max Data Delay",IDC_STATIC,150,145,53,10
+    EDITTEXT        IDC_EDIT_MaxDataDelay,210,143,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MinDiscoDelay,80,168,40,14,ES_AUTOHSCROLL
+    LTEXT           "Max Disco Delay",IDC_STATIC,150,170,53,10
+    EDITTEXT        IDC_EDIT_MaxDiscoDelay,210,168,40,14,ES_AUTOHSCROLL
+    LTEXT           "Min Disco Delay",IDC_STATIC,7,170,62,10
+    EDITTEXT        IDC_EDIT_AvgDiscoDelay,80,193,40,14,ES_AUTOHSCROLL
+    LTEXT           "Avg Data Delay",IDC_STATIC,150,195,53,10
+    EDITTEXT        IDC_EDIT_AvgDataDelay2,210,193,40,14,ES_AUTOHSCROLL
+    LTEXT           "Avg Disco Delay",IDC_STATIC,7,195,62,10
+END
+
+IDD_DIALOG_ForceSelfishness DIALOGEX 0, 0, 127, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Force Selfishness"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,93,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,93,50,14
+    LTEXT           "",IDC_STATIC,7,26,8,8
+    LTEXT           "No. of Routers",IDC_STATIC,7,26,48,8
+    EDITTEXT        IDC_EDIT_RoutersNum,60,23,30,14,ES_AUTOHSCROLL
+    GROUPBOX        "Type",IDC_STATIC,7,40,113,40
+    CONTROL         "Selfish I",IDC_RADIO_S1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,60,50,41,10
+    CONTROL         "Selfish II",IDC_RADIO_S2,"Button",BS_AUTORADIOBUTTON,60,60,44,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_RandomTraffic, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        VERTGUIDE, 25
+        VERTGUIDE, 75
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+        HORZGUIDE, 25
+        HORZGUIDE, 45
+        HORZGUIDE, 65
+        HORZGUIDE, 85
+        HORZGUIDE, 105
+        HORZGUIDE, 125
+        HORZGUIDE, 145
+        HORZGUIDE, 165
+    END
+
+    IDD_DIALOG_Stat, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        VERTGUIDE, 80
+        VERTGUIDE, 150
+        VERTGUIDE, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+        HORZGUIDE, 25
+        HORZGUIDE, 50
+        HORZGUIDE, 75
+        HORZGUIDE, 100
+        HORZGUIDE, 125
+        HORZGUIDE, 150
+        HORZGUIDE, 175
+        HORZGUIDE, 200
+        HORZGUIDE, 225
+    END
+
+    IDD_DIALOG_ForceSelfishness, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        VERTGUIDE, 60
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+        HORZGUIDE, 30
+        HORZGUIDE, 60
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Farsi resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MANET.rc"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

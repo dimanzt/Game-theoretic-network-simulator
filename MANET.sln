@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MANET", "MANET.vcproj", "{8B1DFAF4-0130-4619-8758-EAF9B3EFE29D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B1DFAF4-0130-4619-8758-EAF9B3EFE29D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8B1DFAF4-0130-4619-8758-EAF9B3EFE29D}.Debug|Win32.Build.0 = Debug|Win32
+		{8B1DFAF4-0130-4619-8758-EAF9B3EFE29D}.Release|Win32.ActiveCfg = Release|Win32
+		{8B1DFAF4-0130-4619-8758-EAF9B3EFE29D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

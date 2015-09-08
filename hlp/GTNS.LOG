@@ -1,0 +1,6 @@
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+manet.hpj
+    HC5011: Error: manet.hpj : 
+	Cannot open the file "c:\Program Files\Microsoft Visual Studio\VC98\MFC\include\afxhelp.hm."

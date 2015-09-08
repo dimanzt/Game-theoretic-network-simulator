@@ -1,0 +1,4 @@
+datatrans	rreq		rrep		codata		coack	no wormhole
+														
+22		1927		16351		11		10						
+22		1927		16351		11		10						

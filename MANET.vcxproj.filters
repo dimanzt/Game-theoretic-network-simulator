@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{72dc61f2-d7a5-43ca-8efa-26f46c5aa0f9}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{69076715-2b02-42d9-b58c-24ec5ab6bad6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{25e17ef1-7744-4ff8-8a89-4fe3ff232620}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Help Files">
+      <UniqueIdentifier>{dfa08fb6-c672-40a0-810c-d039e8b9547d}</UniqueIdentifier>
+      <Extensions>cnt;rtf</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Attacker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptionDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="End2End.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceSelfishness.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Link.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MANET.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MANETDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MANETView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomTraffic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Router.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RouterDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Traffic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrafficDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MANET.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MANET.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MANETDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\selfish1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hlp\AfxCore.rtf">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\AfxPrint.rtf">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\AppExit.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\Bullet.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\CurArw2.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\CurArw4.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\CurHelp.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\EditCopy.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\EditCut.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\EditPast.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\EditUndo.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\FileNew.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\FileOpen.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\FilePrnt.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\FileSave.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\HlpSBar.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\HlpTBar.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\RecFirst.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\RecLast.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\RecNext.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\RecPrev.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\Scmax.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\ScMenu.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="hlp\Scmin.bmp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MANET.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Attacker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptionDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="End2End.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceSelfishness.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MANET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MANETDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MANETView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomTraffic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Router.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RouterDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Traffic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrafficDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\MANET.hpj">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\MANET.cnt">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
