@@ -157,7 +157,7 @@ BEGIN
             MENUITEM "Edit",                        ID_NETWORK_ROUTER_EDIT
             MENUITEM "Delete",                      ID_NETWORK_ROUTER_DELETE
             MENUITEM SEPARATOR
-            MENUITEM "Force Selfishness",           ID_ROUTER_FORCESELFISHNESS
+            MENUITEM "Force Failure",           ID_ROUTER_FORCESELFISHNESS
             MENUITEM "Default &Preferences",        ID_NETWORK_ROUTER_PREFERENCES
             POPUP "Grid"
             BEGIN
@@ -188,8 +188,8 @@ BEGIN
             BEGIN
                 MENUITEM "Any Type",                    ID_SELF_ANYTYPE
                 MENUITEM "Ad-hoc",                      ID_SELF_AD
-                MENUITEM "Selfish I",                   ID_SELF_SELFISHI
-                MENUITEM "Selfish II",                  ID_SELF_SELFISHII
+                MENUITEM "Failure I",                   ID_SELF_SELFISHI
+                MENUITEM "Failure II",                  ID_SELF_SELFISHII
                 MENUITEM "All Connections",             ID_SELF_ALLCONNECTIONS
             END
             MENUITEM SEPARATOR
@@ -311,9 +311,9 @@ BEGIN
     PUSHBUTTON      "Cancel",IDCANCEL,220,271,50,14
     GROUPBOX        "TYPE",IDC_STATIC,15,175,255,34
     CONTROL         "Adhoc",IDC_RADIO_Adhoc,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,185,37,10
-    CONTROL         "Selfish I",IDC_RADIO_Malicious,"Button",BS_AUTORADIOBUTTON,100,185,41,10
-    CONTROL         "Selfish II",IDC_RADIO_Selfish2,"Button",BS_AUTORADIOBUTTON,150,185,43,10
-    CONTROL         "Selfish III",IDC_RADIO_Selfish3,"Button",BS_AUTORADIOBUTTON,210,185,45,10
+    CONTROL         "Failure I",IDC_RADIO_Malicious,"Button",BS_AUTORADIOBUTTON,100,185,41,10
+    CONTROL         "Failure II",IDC_RADIO_Selfish2,"Button",BS_AUTORADIOBUTTON,150,185,43,10
+    CONTROL         "Failure III",IDC_RADIO_Selfish3,"Button",BS_AUTORADIOBUTTON,210,185,45,10
     LTEXT           "Power",IDC_STATIC,15,71,21,8
     EDITTEXT        IDC_EDIT_Power,75,68,40,14,ES_AUTOHSCROLL
     LTEXT           "Forwarded Data",IDC_STATIC,15,97,60,8
@@ -823,8 +823,8 @@ BEGIN
     EDITTEXT        IDC_EDIT_DataTransNumber,80,18,40,14,ES_AUTOHSCROLL
     LTEXT           "CLOCK",IDC_STATIC,7,220,37,10
     EDITTEXT        IDC_EDIT_Clock,80,218,40,14,ES_AUTOHSCROLL
-    LTEXT           "No.Selfish1",IDC_STATIC,150,95,37,8
-    LTEXT           "No.Selfish2",IDC_STATIC,150,120,37,10
+    LTEXT           "No.Failure1",IDC_STATIC,150,95,37,8
+    LTEXT           "No.Failure2",IDC_STATIC,150,120,37,10
     EDITTEXT        IDC_EDIT_Selfish2Num,210,118,40,14,ES_AUTOHSCROLL
     LTEXT           "No.Ad.Hoc",IDC_STATIC,150,70,36,8
     EDITTEXT        IDC_EDIT_Selfish1Num,210,92,40,14,ES_AUTOHSCROLL
@@ -849,7 +849,7 @@ END
 
 IDD_DIALOG_ForceSelfishness DIALOGEX 0, 0, 127, 114
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Force Selfishness"
+CAPTION "Force Failure"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,7,93,50,14
@@ -858,8 +858,8 @@ BEGIN
     LTEXT           "No. of Routers",IDC_STATIC,7,26,48,8
     EDITTEXT        IDC_EDIT_RoutersNum,60,23,30,14,ES_AUTOHSCROLL
     GROUPBOX        "Type",IDC_STATIC,7,40,113,40
-    CONTROL         "Selfish I",IDC_RADIO_S1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,60,50,41,10
-    CONTROL         "Selfish II",IDC_RADIO_S2,"Button",BS_AUTORADIOBUTTON,60,60,44,10
+    CONTROL         "Failure I",IDC_RADIO_S1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,60,50,41,10
+    CONTROL         "Failure II",IDC_RADIO_S2,"Button",BS_AUTORADIOBUTTON,60,60,44,10
 END
 
 

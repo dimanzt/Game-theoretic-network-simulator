@@ -101,6 +101,8 @@ BOOL CStat::OnInitDialog()
 	int i;
 	//DIMAN CHANGED
 	int j;
+	int Packet_rdd = 0;
+	int Packet_dfd = 0;
 	int NumDataPackets = 0;
 	double max_Routdiscovery_delay = 0;
 	double min_Routdiscovery_delay = 10000000;
@@ -142,22 +144,33 @@ BOOL CStat::OnInitDialog()
 				> ((double)(max_Routdiscovery_delay))) 
 				max_Routdiscovery_delay = ((double)(packet->RouteDiscoveryDelay)) / ((double)(packet->HopCount));
 			
-			if ( ((double)(packet->RouteDiscoveryDelay)) / ((double)(packet->HopCount)) 
-				< ((double)(min_Routdiscovery_delay))) 
+			if ( ( ((double)(packet->RouteDiscoveryDelay)) / ((double)(packet->HopCount)) 
+				< ((double)(min_Routdiscovery_delay))) && (((double)(packet->RouteDiscoveryDelay))>1) ) 
 				min_Routdiscovery_delay = ((double)(packet->RouteDiscoveryDelay)) / ((double)(packet->HopCount));
 		
-			if ( ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount)) 
-				> ((double)(max_DataForwarding_delay))) 
+			if (( ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount)) 
+				> ((double)(max_DataForwarding_delay))) && (((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount)) < 1000000000))
 				max_DataForwarding_delay = ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount));
 			
-			if ( ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount)) 
-				< ((double)(min_DataForwarding_delay))) 
+			if ( ( ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount)) < ((double)(min_DataForwarding_delay)) ) 
+				&& (((double)(packet->DataForwardingDelay))>1) ) 
+			//{
 				min_DataForwarding_delay = ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount));
-		
-
-
-			avg_RDD_perHop	+= ((double)(packet->RouteDiscoveryDelay)) / ((double)(packet->HopCount));
-			avg_DFD_perHop  += ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount));
+			//	if(min_DataForwarding_delay<1)
+			//		min_DataForwarding_delay++;
+			//}
+		    //DIMAN CHANGED ye && ezafe kardam ke route hayee ke tashki nemishan delay eshoon hesab nashe!
+			if ((((double)(packet->RouteDiscoveryDelay))>1)&&(((double)(packet->RouteDiscoveryDelay))<10000000))
+			{
+				Packet_rdd++;
+				avg_RDD_perHop	+= ((double)(packet->RouteDiscoveryDelay)) / ((double)(packet->HopCount));
+			}
+			//DIMAN CHANGED ye && ezafe kardam ke route hayee ke tashki nemishan delay eshoon hesab nashe!
+			if ((((double)(packet->DataForwardingDelay))>1)&&(((double)(packet->DataForwardingDelay))<10000000))
+			{
+				Packet_dfd++;
+				avg_DFD_perHop  += ((double)(packet->DataForwardingDelay)) / ((double)(packet->HopCount));
+			}
 			//packet = (CPacket*)(router->DataPackets[j]);
 			//packet->DataForwardingDelay;
 			//packet->RouteDiscoveryDelay;
@@ -166,8 +179,8 @@ BOOL CStat::OnInitDialog()
 		}
 	}
 	//DIMAN CHANGED
-	avg_RDD_perHop = avg_RDD_perHop / ((double)(NumDataPackets));
-	avg_DFD_perHop = avg_DFD_perHop / ((double)(NumDataPackets));
+	avg_RDD_perHop = avg_RDD_perHop / (Packet_rdd);
+	avg_DFD_perHop = avg_DFD_perHop / (Packet_dfd);
 	//DIMAN CHANGED
 	ClockNum=ClockNum/RouterSize;
 
@@ -176,6 +189,14 @@ BOOL CStat::OnInitDialog()
 	if(!myFile.Open(_T("myFile.txt"), CFile::modeReadWrite))
 		myFile.Open(_T("myFile.txt"),CFile::modeCreate);
 	myFile.SeekToEnd();
+
+	this->MaxDataDelay = max_DataForwarding_delay;
+	this->MinDataDelay = min_DataForwarding_delay;
+	this->AvgDataDelay = avg_DFD_perHop;
+
+	this->MaxDiscoDelay = max_Routdiscovery_delay;
+	this->MinDiscoDelay = min_Routdiscovery_delay;
+	this->AvgDiscoDelay = avg_RDD_perHop;
 
 	///DIMAN
 	//	ch=(char)13; //CarriageReturn
@@ -209,17 +230,14 @@ BOOL CStat::OnInitDialog()
 	write2file((int)(100*avg_RDD_perHop));
 	write2file((int)(100*avg_DFD_perHop));
 	//DIMAN CHANGED
-	this->MaxDataDelay = max_DataForwarding_delay;
-	this->MinDataDelay = min_DataForwarding_delay;
-	this->AvgDataDelay = avg_DFD_perHop;
-
-	this->MaxDiscoDelay = max_Routdiscovery_delay;
-	this->MinDiscoDelay = min_Routdiscovery_delay;
-	this->AvgDiscoDelay = avg_RDD_perHop;
 
 	//DIMAN CHANGED
 	
 	write2file((int)(100*max_Routdiscovery_delay));
+	write2file((int)(100*min_Routdiscovery_delay));
+	write2file((int)(100*max_DataForwarding_delay));
+	write2file((int)(100*min_DataForwarding_delay));
+	
 	//y_axis=rand();
 	//write2file(y_axis);
 	//write2file(RAND_MAX + 1);

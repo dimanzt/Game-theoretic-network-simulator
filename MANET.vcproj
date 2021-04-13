@@ -366,7 +366,7 @@
 					/>
 				</FileConfiguration>
 			</File>
-			<File
+      <!--<File
 				RelativePath="hlp\MANET.hpj"
 				>
 				<FileConfiguration
@@ -391,7 +391,7 @@
 						Outputs="$(OutDir)\$(InputName).hlp"
 					/>
 				</FileConfiguration>
-			</File>
+			</File>-->
 			<File
 				RelativePath="MANET.rc"
 				>

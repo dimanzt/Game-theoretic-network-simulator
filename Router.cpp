@@ -1105,6 +1105,8 @@ void CRouter::ProcessAckPacket0(CPacket* packet)//GTAMR
 				CPacket* DataPacket=(CPacket*)(DataPackets[dpsc]);
 				DataPacket->Stop=Clock;
 				DataPacket->DataForwardingDelay=DataPacket->Stop-DataPacket->Start;
+				//if(DataPacket->DataForwardingDelay==0)
+				//	DataPacket->DataForwardingDelay++;
 				DataPacket->SendData=FALSE;
 				this->EstablishedConnectionsCounter++;
 			}
